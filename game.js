@@ -20,7 +20,7 @@ document.querySelector('.infoHiddenWord').innerHTML = "<br>Press a key to try to
 
 document.getElementById('hint').onclick = function(event) {hintFunction()};
 
-document.onkeydown = function(event) {
+document.onkeypress = function(event) {
 						  var keyCode = event.which || event.keyCode;
 						  var letter = String.fromCharCode(keyCode);
 						  checkLetter(letter.toUpperCase());
